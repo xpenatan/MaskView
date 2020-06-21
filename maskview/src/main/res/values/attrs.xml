@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MaskView">
+        <attr name="mv_backgroundColor" format="color"/>
+        <attr name="mv_pathView" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="PathView">
+        <attr name="pv_vectorDrawable" format="integer"/>
+        <attr name="pv_previewColor" format="color"/>
+        <attr name="pv_scaleType" format="enum">
+            <enum name="fill" value="0" />
+            <enum name="start" value="1" />
+            <enum name="center" value="2" />
+            <enum name="end" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>
