@@ -8,26 +8,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.camera.view.PreviewView
-            android:id="@+id/viewFinder"
-            app:scaleType="fillCenter"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <com.github.xpenatan.maskview.MaskView
-            android:id="@+id/maskView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:mv_backgroundColor="#AA000000"
-            app:mv_pathView="@+id/myPathView" />
-
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="My Cool Title"
-            android:textColor="#FFFFFF"
+            android:text="My Cool Preview"
+            android:textColor="#000000"
             android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -40,40 +27,39 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="My Cool SubTitle"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
             android:textSize="16sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title" />
 
-        <com.github.xpenatan.maskview.PathView
-            android:id="@+id/myPathView"
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+
+        <ImageView
+            android:id="@+id/imagePreview"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
+            android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/cameraCaptureButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/subTitle"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0"
-            app:layout_constraintWidth_percent="0.8"
-            app:pv_previewColor="#FFFFFFFF"
-            app:pv_scaleType="center"
-            app:pv_vectorDrawable="@drawable/ic_mask_vector" />
+            app:layout_constraintWidth_percent="1.0" />
 
         <Button
-            android:id="@+id/cameraCaptureButton"
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginBottom="20dp"
             android:elevation="2dp"
             android:scaleType="fitCenter"
-            android:text="Take Photo"
+            android:text="GO BACK"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

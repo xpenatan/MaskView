@@ -11,7 +11,8 @@ Small library for creating masks using vector drawable.  Useful for creating cam
 ```groovy
 // build.gradle
 dependencies {
-      compile 'com.github.xpenatan:maskview:1.0.0'
+    //TODO
+    compile 'com.github.xpenatan:maskview:1.0.0'
 }
 ```
 
@@ -33,7 +34,7 @@ dependencies {
 
 MaskView attributes:
  * `mv_backgroundColor` Color of the background where the mask will be applied
- * `mv_pathView` The id of PathView which is required to apply the vector mask
+ * `mv_pathView` The id of PathView which is required to apply the mask
 
  PathView attributes:
  * `pv_previewColor` Color to show only in preview window
